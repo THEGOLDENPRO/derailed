@@ -1,4 +1,4 @@
-var incr: number = 0;
+var incr: number = 1;
 
 export function createSnowflake(): number {
   const currentMs = Date.now();
@@ -9,7 +9,7 @@ export function createSnowflake(): number {
   epoch |= incr % 4096;
 
   if (incr === 9000000000) {
-    incr = 0;
+    incr = 1;
   }
 
   incr++;
