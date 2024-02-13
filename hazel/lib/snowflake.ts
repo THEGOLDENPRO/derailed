@@ -1,6 +1,6 @@
 var incr: number = 0;
 
-function createSnowflake(): number {
+export function createSnowflake(): number {
   const currentMs = Date.now();
 
   var epoch = (currentMs - 1704067200000) << 22;
