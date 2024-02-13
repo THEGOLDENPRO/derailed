@@ -1,4 +1,4 @@
 ﻿packages:
   - "app"
-  - "vanguard"
+  - "hazel"
   - "shared/**"
